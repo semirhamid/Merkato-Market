@@ -1,0 +1,68 @@
+.customerdashboard{
+    max-width: 1280px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wids{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 3em 0;
+        .widget{
+            margin:1em ;
+            flex: 1;
+        }
+    }
+    .orders, .products{
+        height: 600px;
+        width: 100%;
+        margin-bottom: 3em;
+        padding: 2em 1em;
+        box-shadow: 0px 0px 100px -19px rgba(0, 0, 0, 0.1);
+        position: relative;
+        box-sizing: border-box;
+        h4{
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-size: 1.5rem;
+        }
+        .MuiDataGrid-main{
+            #editor {
+            
+                    display: flex;
+                    justify-content: flex-end;
+                    color: rgb(25, 29, 56);
+                    background-color: rgb(71, 169, 71);
+                    display: flex;
+                    cursor: pointer;
+                    padding: 0 0.6em;
+                    border-radius: 20px;
+                    color: white;
+                    font-weight: 500;
+
+
+            
+                    #editor:hover
+                     {
+                        background-color: rgb(25, 29, 56);
+                        color: white;
+                        border-bottom-left-radius: 0.5em;
+                        transition: 0.5s;
+            
+                        .btn-edit {
+                            color: rgb(255, 255, 255);
+                        }
+            
+                        p {
+                            margin: auto;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+            
+                }
+        }
+    }
+}

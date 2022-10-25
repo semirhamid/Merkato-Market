@@ -1,0 +1,118 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 1em;
+        border-radius: 1em;
+    width: 285px;
+    img{
+        width: 200px;
+        margin-top: 2em;
+        
+    }
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 900;
+        margin-top: 0;
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    form{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        
+        margin: 1em 0;
+        padding-left: 2em;
+        
+        label{
+            position: relative;
+            .label{
+                position: absolute;
+                top: 10px ;
+                left: 10px;
+                z-index: 10;
+                background-color: white;
+                padding:0 5px;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                color: black;
+                font-weight: 300;
+                font-family: 'Roboto Slab', serif;
+            }
+            .labelError{
+                color: red;
+            }
+            input {
+                    border: none;
+                    border: 1px solid grey;
+                    border-radius: 0.4em;
+                    position: relative;
+                    padding: 0.6em 0;
+                    width: 90%;
+                    margin: 1em 0;
+                    font-size: 1.1rem;
+                    padding-left: 10px;
+                    
+                }
+                input:focus{
+                    outline: none;
+                    border: 1px solid green;
+                    transition: 0.1s;
+                }
+                .inputError{
+                    border:1px solid red;
+                }
+        }
+        #registerButton{
+            margin-top: 2em;
+            width: 30%;
+            padding: 0.4em 0;
+            border: none;
+            background-color: rgb(225, 144, 15);
+            color: white;
+            font-size: 1rem;
+            border-radius: 1rem;
+            letter-spacing: 1px;
+            
+        }
+        .error{
+            color: red;
+            font-size: 0.8rem;
+            
+        }
+        .loginRegister{
+            margin-top: 1em;
+            a{
+                text-decoration: none;
+                color: black;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 389px) {
+    .register{
+        width: 330px;
+        -webkit-box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 2px rgba(201, 201, 201, 0.47);
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .register {
+        width: 400px;
+        -webkit-box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 2px rgba(201, 201, 201, 0.47);
+    }
+
+}

@@ -1,0 +1,100 @@
+.loginPage{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        display: flex;
+        justify-content: center;
+
+    img{
+        width: 200px;
+        margin: auto;
+    }
+    .title{
+        text-align: center;
+        width: 90%;
+        align-self: center;
+        h2{
+            margin: 0.5em 0;
+            font-weight: 700;
+            font-size: 2rem;
+            width: 100%;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0;
+
+    width: 300px;
+    font-family: 'Roboto Slab', serif;
+    
+    padding: 0.6em;
+    border-radius: 3em;
+    background-color: white;
+    #buttonDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        .auth{
+            padding: 1em;
+            margin: 0.5em 0;
+            border-radius: 0.5em;
+            border: 1px solid grey;
+            outline: none;
+            font-size: 1rem;
+            
+        }
+        .auth:focus{
+            background-color: white;
+        }
+        #signin{
+            padding: 0.8em;
+            margin-top: 2em;
+            border-radius: 0.5em;
+            border: none;
+            background-color: rgb(255, 191, 112);
+            font-size: 0.9rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: none;
+            cursor: pointer;
+            outline-offset: 4px;
+        }
+        #signin:active{
+            box-shadow: rgba(192, 193, 194, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 40px 1px;
+            padding: 0.9em;
+            margin-bottom:-.1em;
+            margin-top: 1.9em;
+        }
+        #forget{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-top: 1em;
+            font-size: 0.8rem;
+        }
+        #forget:hover{
+            color: darkblue;
+        }
+        
+    }
+        span {
+            margin-bottom: 2em;
+            font-size: 1rem;
+            margin-top: 1em;
+            a{
+                text-decoration: none;
+                color: rgb(33, 15, 240);
+            }
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .loginPage{
+        width: 360px;
+        padding: 2em;
+    }
+}

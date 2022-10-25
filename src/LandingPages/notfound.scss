@@ -1,0 +1,33 @@
+.notfound{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .picture{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 70%;
+            margin: auto;
+        }
+    }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            a {
+                color: white;
+                background: green;
+                padding: 0.3em 0.6em;
+                border-radius: 1em;
+            }
+            a:active{
+                padding: 0.4em 0.6em;
+                margin: -0.1em 0;
+            }
+        }
+}

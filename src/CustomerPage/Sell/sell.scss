@@ -1,0 +1,259 @@
+$large: 1280px;
+$medium: 768px;
+$small: 680px;
+
+.new {
+    width: 100%;
+    margin: 3em 0;
+    
+    .newContainer {
+        display: flex;
+        flex-direction: column;
+        .notcompleted{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .complete-title{
+                font-size: large;
+            }
+            a{
+                background-color: rgb(7, 82, 79);
+                padding: 0.2em 1em;
+                color: white;
+                cursor: pointer;
+            }
+            a:active{
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                padding: 0.3em 1em;
+                margin: -0.1em 0;
+            }
+        }
+        .top,
+        .bottom {
+            box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            
+            h1 {
+                color: lightgray;
+                font-size: 20px;
+            }
+
+            .left {
+                text-align: center;
+                align-self: center;
+
+                .imageLabel {
+                    width: 100%;
+                    height: 400px;
+
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .productImage {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    border-radius: 0;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    form div {
+                        width: 100%;
+                    }
+
+
+                    .category {
+                        width: 90%;
+
+                        select {
+
+                            height: 2em;
+                            width: 100%;
+                            margin-top: 0.3em;
+                            border: none;
+                            border-bottom: 1px solid gray;
+
+                            option {
+                                width: 10px;
+                                box-sizing: border-box;
+
+                            }
+                        }
+
+                        .select:focus {
+                            border-bottom: 1px solid green;
+                            outline: none;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .price {
+                        input:focus {
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
+                    .formInput {
+                        margin: 1em;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+
+                        input {
+
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+
+                        }
+
+                        input:focus {
+                            border-bottom: 1px solid green;
+                            outline: none;
+                        }
+                    }
+
+                    .description {
+                        width: 90%;
+                        border: none;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+
+                        textarea {
+                            outline: none;
+                            width: 100%;
+                            padding: 5px;
+
+                            border: none;
+                            border-bottom: 1px solid gray;
+
+                        }
+
+                        textarea:focus {
+                            border-bottom: 1px solid green;
+                        }
+                        textarea:invalid {
+                            border-bottom: 2px dashed red;
+                        }
+
+                        textarea:invalid:focus {
+                            background-image: linear-gradient(rgb(170, 110, 120)rgb(200, 117, 142));
+                        }
+                    }
+
+                    .button {
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin-top: 10px;
+                        margin-bottom: 3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    .new {
+        display: flex;
+        justify-content: center;
+
+        .newContainer {
+            width: $medium;
+
+            .bottom {
+                .right {
+                    form {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+
+                        .formInput {
+                            width: 40.5%;
+                        }
+
+                        .category {
+                            display: flex;
+                            flex-direction: column;
+                            box-sizing: border-box;
+
+
+
+                            label {
+                                align-self: flex-start;
+
+                            }
+
+                            select {
+                                align-self: center;
+                                width: 100%;
+                            }
+
+                        }
+
+                        .description {
+                            padding: 1.5em;
+                            width: 95%;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

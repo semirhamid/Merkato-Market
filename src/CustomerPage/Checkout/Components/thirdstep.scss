@@ -1,0 +1,131 @@
+.secondstep {
+    margin-bottom: 3em;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .addressBar {
+            margin-top: 1em;
+            background-color: green;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 95%;
+            position: relative;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0.0625rem solid rgba(46, 54, 80, .125);
+            border-radius: 0.5rem;
+
+            h5 {
+                width: 90%;
+                font-size: 1.25rem;
+                margin: 0 0 1em 0;
+                color: #132f65;
+            }
+
+            .Address {
+                width: 100%;
+                margin-bottom: 1rem;
+
+
+                label {
+                    margin-bottom: 0.5em;
+
+
+                }
+
+                input {
+                    margin-top: 0.5em;
+                    padding: 0.55em 0.75em;
+                    border: 0.0625rem solid #d1d7e0;
+                    border-radius: 0.5em;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #66799e;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    width: 100%;
+                    box-sizing: border-box;
+                    box-shadow: inset 0 1px 2px rgb(46 54 80 / 8%);
+                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    padding: 0.55rem 0.75rem;
+                    font-size: 1rem;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+            }
+
+            .submit {
+                background-color: rgb(38, 43, 64);
+                color: white;
+                font-size: 1.1rem;
+                padding: .4em .6em;
+                border-radius: 0.3em;
+                cursor: pointer;
+                margin-top: 2em;
+            }
+
+            .submit:hover {
+                outline: 1px solid rgb(38, 43, 64);
+            }
+
+            .submit:disabled {
+                border: 1px solid #999999;
+                background-color: #cccccc;
+                color: #666666;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+
+        padding: 1em;
+
+        button {
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 0.3em;
+            font-size: 1rem;
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            outline: 1px solid purple;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .secondstep {
+        form {
+
+            .addressBar {
+                .Address {
+                    width: 48%;
+                }
+
+                .address {
+                    width: 68%;
+                }
+
+                .city {
+                    width: 28%;
+                }
+            }
+        }
+    }
+
+}

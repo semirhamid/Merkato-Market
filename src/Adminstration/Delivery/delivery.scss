@@ -1,0 +1,166 @@
+.delivery{
+width: 100%;
+display: flex;
+flex-direction: column;
+position: relative;
+
+#vehicles{
+    text-align: center;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    margin: 1em 0;
+    }
+
+    .cars{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 1em;
+
+        .carItem{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            display: flex;
+            flex: 1;
+            border-radius: 1em;
+            padding:1em;
+            margin: 1em 0;
+           flex-direction: column;
+            box-sizing: border-box;
+
+            img{
+                
+                object-fit: contain;
+            }
+
+            span{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                
+
+
+                h6{
+                    margin: 6px;
+                    color: gray;
+                    justify-self: flex-end;
+                }
+            }
+        }
+
+        .large , .medium{
+            flex-direction: column;
+            justify-content: center;
+            
+
+            img{
+                margin-bottom: 1em;
+                width: 280px;
+                object-fit: cover;
+            }
+            span{
+                align-self: center;
+                text-align: center;
+            }
+        }
+        .small{
+            img{
+                height: 180px;
+                margin-bottom: 1em;
+            }
+            span{
+                align-self: center;
+            }
+        }
+    }
+}
+$medium:894px;
+@media screen and (min-width: $medium){
+.delivery{
+    #vehicles{
+        width: 90%;
+    }
+    .cars{
+        flex-direction: row;
+        .carItem{
+            width: 40%;
+            margin: 2.5%;
+        }
+        .small{
+            
+                
+                img {
+                        margin-bottom: 1em;
+                        height: 100px;
+                    }
+                
+                    span {
+                        align-self: center;
+                        text-align: center;
+                    }
+        }
+    }
+}
+}
+
+$large: 1300px;
+
+@media screen and (min-width: $large) {
+    .delivery {
+        width: $large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        #vehicles{
+            width: 90%;
+        }
+        .cars {
+            flex-direction: row;
+
+            .carItem {
+               
+                margin: 2.5%;
+                flex-direction: row;
+            }
+
+            .small, .medium, .large {
+                flex-direction: row;
+
+                img {
+                    
+                    object-fit: cover;
+                    margin-bottom: 1em;
+                    margin: auto;
+                }
+
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    text-align: center;
+                    align-items: flex-start;
+                }
+            }
+                        .small{
+                            box-sizing: border-box;
+                            padding: 0%;
+                            flex: 5;
+                            span{
+                                justify-content: flex-start;
+                                
+                                text-align: start;
+                            }
+                            
+                        }
+                        .large, .medium{
+                            flex:7;
+                        }
+                        
+        }
+    }
+}
+

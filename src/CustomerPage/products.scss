@@ -1,0 +1,16 @@
+.products {
+    position: relative;
+
+    .productsBody {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        align-items: center;
+        margin: auto;
+        position: relative;
+
+        .shopSecure{
+            width: 100px;
+        }
+    }
+}

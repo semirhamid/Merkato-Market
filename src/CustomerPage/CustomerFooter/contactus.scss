@@ -1,0 +1,82 @@
+.contact-us{
+    margin: 2em 0;
+    
+    padding: 2em 0;
+    h1{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .contact-p{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 30px;
+        width: 100%;
+        text-align: start;
+        max-width: 500px;
+        margin-top: 3em;
+        padding: 1em;
+        box-sizing: border-box;
+        label{
+            margin: 0;
+        }
+        input {
+        
+                margin-top: 0.5em;
+                padding: 0.55em 0.75em;
+                border: 0.0625rem solid grey;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #66799e;
+                background-color: #fff;
+                background-clip: padding-box;
+                width: 100%;
+                box-sizing: border-box;
+                box-shadow: inset 0 1px 2px rgb(46 54 80 / 8%);
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                padding: 0.55rem 0.75rem;
+                font-size: 1rem;
+        
+            }
+        
+            input:focus {
+                border: 1px solid green;
+                outline: none;
+            }
+            .message{
+
+                textarea {
+                    box-sizing: border-box;
+                    outline: none;
+                    width: 100%;
+                    padding: 0.55rem 0.75rem;
+                    height: 200px;
+                    border: 1px solid gray;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    font-size: 1rem;
+                
+                    }
+                
+                    textarea:focus {
+                        border: 1px solid green;
+                    }
+            }
+        
+        .button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+}

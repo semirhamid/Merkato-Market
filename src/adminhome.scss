@@ -1,0 +1,36 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+
+    .mainContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .sidebar{
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .content{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            align-self: center;
+            max-width: 1280px;
+            
+            
+            
+        }
+        .content--open{
+
+            z-index: -20;
+        }
+    }
+}

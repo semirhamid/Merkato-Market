@@ -1,0 +1,106 @@
+.rolewidget {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0.5em;
+        
+
+        .title {
+            font-weight: bold;
+            font-size: 14px;
+            color: rgb(160, 160, 160);
+        }
+
+        .counter {
+            font-size: 2rem;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            .rolelabel{
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-left: .5em;
+            }
+        }
+
+        .link {
+            width: max-content;
+            font-size: 12px;
+            border-bottom: 1px solid gray;
+        }
+
+        .percentage {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            &.positive {
+                color: green;
+            }
+
+            &.negative {
+                color: red;
+            }
+        }
+
+        .icon {
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+        
+    }
+    .left{
+        padding-bottom: 0;
+    }
+    .right{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        align-self: flex-end;
+        .editbutton {
+                background-color: rgba(55, 201, 55, 0.651);
+                border: none;
+                color: white;
+                cursor: pointer;
+        
+            }
+        
+            .deletebutton {
+                background-color: rgb(224, 43, 78);
+                border: none;
+                color: white;
+                bottom:0;
+                width: 52px;
+                cursor: pointer;
+        
+            }
+        
+            .editbutton:active {
+                outline: 1px solid green;
+            }
+        
+            .deletebutton:active {
+                outline: 1px solid red;
+            }
+    }
+}

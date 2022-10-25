@@ -1,0 +1,148 @@
+.single {
+  display: flex;
+  width: 90%;
+
+  .singleContainer {
+    flex: 6;
+
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      .left {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .left{
+          display: flex;
+          flex-direction: column;
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        position: relative;
+
+        .deleteButton{
+          position: absolute;
+          top:0;
+          right:0;
+          color: #ffffff;
+          background-color: rgb(248, 100, 100);
+          padding: 5px;
+          font-size: 12px;
+          border: 0;
+          border-radius: 0px 0px 0px 5px;
+
+        }
+        .editButton {
+          position: absolute;
+          top: 0;
+          right: 50px;
+          padding: 5px;
+          font-size: 12px;
+          color: #7451f8;
+          background-color: #7551f818;
+          cursor: pointer;
+          border-radius: 0px 0px 0px 5px;
+        }
+
+        .item {
+          display: flex;
+          padding-left: 20px;
+
+          .itemImg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            .itemTitle {
+              margin-bottom: 10px;
+              color: #555;
+            }
+
+            .detailItem {
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .itemKey {
+                font-weight: bold;
+                color: rgb(37, 37, 37);
+                margin-right: 5px;
+              }
+
+              .itemValue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+
+      .right {
+        flex: 1;
+        .component{
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 2em;
+            display: flex;
+            justify-content: space-between;
+            margin: 1em;
+            #title{
+              font-size: 2rem;
+              font-weight: 300;
+              
+            }
+            #count{
+              font-size: 2rem;
+                font-weight: 300;
+                color: rgb(255, 0, 93);
+
+            }
+        }
+      }
+    }
+
+    .bottom {
+      
+      padding: 20px;
+      margin: 10px 20px;
+      .orders,
+        .products {
+          height: 600px;
+          width: 100%;
+          margin-bottom: 3em;
+          padding: 2em 1em;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          position: relative;
+          box-sizing: border-box;
+          border-radius: 1em;
+          border: 1px solid grey;
+      
+          h4 {
+            position: absolute;
+            top: -18px;
+            left: 10px;
+            font-size: 1.5rem;
+            color: gray;
+            font-weight: 400;
+            background-color: white;
+            padding:0 0.3em;
+            
+          }
+        }
+    }
+
+    .title {
+      font-size: 16px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
+  }
+}

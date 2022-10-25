@@ -1,0 +1,121 @@
+.adminstrationorders{
+    width: 100%;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    margin: 3em 0;
+    background-color: transparent;
+
+    .findorder {
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            text-align: center;
+            margin: 3em 0;
+            padding: 1em;
+            position: relative;
+            border: 1px solid rgb(231, 228, 228);
+            border-radius: 1em;
+            letter-spacing: 1px;
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+    
+    
+            #changerolename {
+                position: absolute;
+                left: 1em;
+                top: -0.8em;
+                font-weight: 300;
+                background-color: white;
+                padding: 0 0.4em;
+    
+            }
+    
+            #roletitle {
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 0.5em;
+            }
+    
+            .searchresults {
+                height: 150px;
+                #warning{
+                    color: white;
+                    background-color:rgb(240, 96, 142, 0.9) ;
+                    border-radius: 1em;
+                    font-size: 1.5 rem;
+                }
+            }
+    
+            form {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+    
+                label {
+                    display: flex;
+                    justify-content: center;
+    
+                    #rolename {
+                        font-size: 1rem;
+                        padding: 0.2em 0.6em;
+                        flex: 1;
+                        max-width: 768px;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid gray;
+                    }
+    
+                    #rolename:focus {
+                        border-bottom: 1px solid green;
+                        outline: none;
+                    }
+                }
+    
+                #submit {
+                    padding: 5px;
+                    border: none;
+                    background-color: teal;
+                    color: white;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+    
+                }
+            }
+        }
+
+    #ordermanage{
+        text-align: center;
+        margin: 1em;
+        background-color: white;
+        padding: 0.5em ;
+        border-radius: 1em;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    }
+    .ordertable{
+        width: 100%;
+        border: 1px solid rgb(213, 213, 213);
+        padding: 1em;
+        background-color: white;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 1em;
+        #editor{
+            color: white;
+            background-color: rgba(80, 142, 52, 0.9);
+            border-radius: .3em;
+            font-size: 1 rem;
+            text-align: center;
+            width: 52px;
+        }
+        #ordermgmt{
+            position: absolute;
+            top: -12px;
+            background-color: white;
+            font-weight: 300;
+            color: grey;
+            
+        }
+    }
+}

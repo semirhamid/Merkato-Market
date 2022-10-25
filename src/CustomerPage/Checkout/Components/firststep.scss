@@ -1,0 +1,59 @@
+.firstStep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+    #payment{
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+    .payments{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em;
+        box-sizing: border-box;
+        flex-direction: column;
+        label{
+            display: flex;
+            margin: 1em 0;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            margin: 1em 0;
+            padding: 0.5em 3em;
+            padding-left: 1.5em;
+            box-sizing: border-box;
+            border-radius: 1em;
+            background-color: white;
+            
+            img{
+                width: 80%;
+                height: 125px;
+                object-fit: contain;
+            }
+            input{
+                padding: 0;
+            }
+            
+        }
+        
+        
+    }
+        button {
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 0.3em;
+            font-size: 1rem;
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+            
+        }
+    
+        button:hover {
+            outline: 1px solid purple;
+        }
+}

@@ -1,0 +1,137 @@
+.reviews{
+    max-width: 1000px;
+    position: relative;
+    .review-title{
+        margin-top: 2em;
+        font-weight: 300;
+        font-family: cursive;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .comment{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid rgb(211, 209, 209);
+        padding-bottom: 1em;
+        margin: 0.5em;
+        padding: 0 0.5em;
+        padding-bottom: 0.5em;
+        .info{
+            margin-right: 1em;
+            border-right: 1px solid rgb(194, 192, 192);
+            padding-right: 1em;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .circle{
+                padding: 1em;
+                background-color: rgb(224, 222, 222);
+                border-radius: 50%;
+                width: 2em;
+                height: 2em;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                margin-bottom: 1em;
+                margin-top: 0.4em;
+                p{
+                    justify-self: flex-end;
+                    font-size: 1.4rem;
+                }}
+                p{
+                    font-size: 0.8rem;
+                    display: flex;
+
+                }
+            
+        }
+        .description{
+            margin-left: 1em;
+            flex: 9;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+                letter-spacing: 1pt;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 300;
+                margin-top: 0.6em;
+            }
+            h6{
+                align-self: flex-end;
+            }
+            .helpful{
+                align-self: flex-end;
+                #delete{
+                    background-color: red;
+                    border: none;
+                    color: white;
+                    font-size: 0.6rem;
+                    cursor: pointer;
+                }
+                
+                p , a{
+                    font-weight: 300;
+                    font-size: 0.7rem;
+                }
+                a{
+                    color: rgb(91, 150, 218);
+                }
+                
+            }
+        }
+        
+
+    }
+    .comment:last-child {
+            margin-bottom: 2em;
+        }
+    .addcomment{
+        width: 100%;
+        form {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                width: 100%;
+                text-align: start;
+                margin-top: 3em;
+                padding: 1em;
+                box-sizing: border-box;
+        
+                .message {
+        
+                    textarea {
+                        box-sizing: border-box;
+                        outline: none;
+                        width: 100%;
+                        padding: 0.55rem 0.75rem;
+                        height: auto;
+                        border: 1px solid gray;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        font-size: 1rem;
+        
+                    }
+        
+                    textarea:focus {
+                        border: 1px solid green;
+                    }
+                }
+        
+                .button {
+                    width: 150px;
+                    padding: 10px;
+                    border: none;
+                    align-self: flex-end;
+                    background-color: teal;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+    }
+}

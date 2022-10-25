@@ -1,0 +1,95 @@
+.manageroles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .roles{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        .rolewidget{
+            margin: 1em 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 150px;
+            align-items: stretch ;
+            justify-content: space-around;
+            .left{
+                .title{
+                    font-weight: 100;
+                }
+            }
+        }
+        .addrole{
+            margin: 1em;
+            box-sizing: border-box;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                #create{
+                    width: 100px;
+                    background-color: purple;
+                    color: white;
+                    font-size: 1rem;
+                    border: none;
+                    margin-left: 0.2em;
+                }
+                #rolename:focus{
+                    border: 1px solid green;
+                    outline: none;
+                }
+                #rolename{
+                    font-size: 1rem;
+                    margin: 0.2em;
+                    padding: 0.2em;
+                    border: 1px solid grey;
+                }
+                
+            }
+        }
+    }
+
+}
+@media screen and (min-width :768px) {
+    .manageroles {
+        .roles {
+            justify-content: center;
+            flex-direction: row;
+
+            .rolewidget,
+            .addrole {
+                min-width: 310px;
+                max-width: 350px;
+                margin: 1em;
+            }
+
+        }
+    }
+
+}
+@media screen and (min-width :850px) {
+    .manageroles{
+        width: 100%;
+        margin: 0;
+        .roles{
+            
+            .rolewidget, .addrole{
+            min-width: 350px;
+            max-width: 350px;
+            margin: 1em;
+            }
+            
+        }
+    }
+    
+}

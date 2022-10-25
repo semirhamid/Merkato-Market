@@ -1,0 +1,295 @@
+$themeNormal: rgb(7, 82, 79);
+$themeLight: rgb(9, 95, 92);
+$themeDeep: rgb(5, 48, 46);
+$userName: black;
+$borderRadius: 1em;
+$userRole: rgb(7, 82, 79);
+$liHover: rgb(9, 95, 92);
+
+.customerheader{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    font-family: 'Roboto Slab', serif;
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-color:$themeNormal;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding-bottom: 1em;
+        
+        .logo{
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            margin: .4em 0;
+            padding: 0 1em;
+            padding-top: 0.1em;
+            box-sizing: border-box;
+            
+
+            .searchbar{
+                max-width: 700px;
+            }
+        }
+        .searchbar{
+            justify-self: center;
+            width: 90%;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+
+            form{
+                width: 100%;
+                margin: auto;
+                span{
+                    display: flex;
+                    border: 1px solid transparent;
+                    max-width: 700px;
+                    margin: auto;
+                    #search {
+                            border-top-left-radius: 2em;
+                            border-bottom-left-radius: 2em;
+                            position: relative;
+                            z-index: 10;
+                            line-height: 1rem;
+                            text-indent: .5rem;
+                            flex: 10;
+                        }
+                        #search:focus{
+                            border: none;
+                            border-right: 0;
+                            
+                        }
+                    
+                        input,
+                        select {
+                            min-width: 60px;
+                            border: none;
+                            font-size: 1rem;
+                            padding: 0.4em;
+                            flex: 1;
+                            width: 100%;
+                            outline: none;
+                    
+                        }
+                        select{
+                            
+                            color: rgb(57, 57, 57);
+                        }
+                        select:focus{
+                            outline: none;
+                            border: none;
+                        }
+                        
+                        #submit{
+                            
+                            padding: 0 0.4em;
+                            color: rgb(37, 37, 37);
+                            border-top-right-radius: 2em;
+                            border-bottom-right-radius: 2em;
+                        }
+                    span{
+                        background-color: transparent;
+                        padding: 3px 5px;
+                        margin: 0;
+                        padding-top: 3px;
+                        border-top-right-radius: 2em;
+                            border-bottom-right-radius: 2em;
+                    }
+                }
+                
+
+            }
+            
+        }
+    }
+
+    .authenthication{
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        
+
+
+        .cart {
+            margin: 0 .7em;
+            position: relative;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+
+
+            p{
+                position: absolute;
+                color: white;
+                top: -40%;
+                right: 0;
+                font-weight: bolder;
+                padding: 0;
+                font-size: 0.9rem;
+                
+
+            }
+        }
+
+        .menu-container{
+            height: 30px;
+            width: 30px;
+            margin: 0 0.6em;
+            margin-bottom: 0;
+            cursor: pointer;
+            .menu-trigger {
+                    position: relative;
+                    img {
+                        position: absolute;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        cursor: pointer;
+            
+                    }
+                }
+        
+
+        .dropdown-menu{
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 34;
+            background-color: rgb(255, 255, 255);
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            border-radius: $borderRadius;
+            
+            width: 200px;
+            h3 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                    padding: 20px 0;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $userName;
+                    line-height: 1.2rem;
+                    span {
+                            font-size: 14px;
+                            color: $userRole;
+                            font-weight: 400;
+                        }
+                }
+            ul{
+                margin-bottom: 1em;
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 0;
+                li {
+                        padding: 10px 0 0 0;
+                        border-top: 1px solid rgba(0, 0, 0, 0.05);
+                        width: 100%;
+                        
+                    }
+                li:hover{
+                    background-color: $liHover;
+                        a {
+                                color: white;
+                                cursor: pointer;
+                            }
+                        img {
+                            opacity: 1;
+                            cursor: pointer;
+                        }
+                }
+                .dropdownItem {
+                    display: flex;
+                    padding: 0.4em 0.9em;
+                    justify-content: flex-start;
+                    box-sizing: border-box;
+                    
+                    a {
+                        width: 100%;
+                        margin-left: 10px;
+                        transition:0;
+                        color: black;
+                        align-self: center;
+                    }
+                }
+            }
+            
+        }
+        .dropdown-menu::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 20px;
+        height: 20px;
+        width: 20px;
+        background: var(--secondary-bg);
+        transform: rotate(45deg);
+        }
+        .active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: var(--speed) ease;
+        }
+        .inactive {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-20px);
+            transition: var(--speed) ease;
+        }
+
+        }
+        }
+        
+    }
+    
+    
+    .upperBottomCategories{
+        display: flex;
+        background-color: $themeLight;
+        padding: 0.5em 0;
+        .categories{
+            margin: auto;
+            display: flex;
+            span{
+                color: white;
+                display: flex;
+                margin: 0.4em .6em;
+                    background: linear-gradient(to right, rgba(255,
+                        180,
+                        10, 0), rgba(100, 200, 200, 0)), linear-gradient(to right, rgba(255,
+                            180,
+                            10, 1), rgba(255,
+                        180,
+                        10, 1));
+                    background-size: 100% 0.1em, 0 0.1em;
+                    background-position: 100% 100%, 0 100%;
+                    background-repeat: no-repeat;
+                    transition: background-size 400ms;
+
+                    button{
+                        border: none;
+                        background: transparent;
+                        padding: 0;
+                        color: white;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        font-size: 1rem;
+                        cursor: pointer;
+                    }
+
+            }
+                        span:hover {
+                            background-size: 0 0.1em, 100% 0.1em;
+            
+                        }
+            
+        }
+    }

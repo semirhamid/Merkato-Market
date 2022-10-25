@@ -1,0 +1,90 @@
+.editrole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4em;
+    #customizerole{
+        margin-top: 1em;
+    }
+    .editrolename, .userfinder{
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            width: 90%;
+            text-align: center;
+            margin: 3em;
+            padding: 1em;
+            position: relative;
+            border: 1px solid rgb(231, 228, 228);
+            border-radius: 1em;
+            letter-spacing: 1px;
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            
+
+        #changerolename{
+            position: absolute;
+            left: 1em;
+            top: -0.8em;
+            font-weight: 300;
+            background-color: white;
+            padding: 0 0.4em;
+            
+        }
+        #roletitle{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 0.5em;
+        }
+        .searchresults{
+            height: 150px;
+        }
+        form{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            label{
+                display: flex;
+                justify-content: center;
+                #rolename {
+                        font-size: 1rem;
+                        padding: 0.2em 0.6em;
+                        flex: 1;
+                        max-width: 768px;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid gray;
+                    }
+                    #rolename:focus{
+                        border-bottom: 1px solid green;
+                        outline: none;
+                    }
+            }
+            
+            #submit{
+                padding: 5px;
+                border: none;
+                background-color: teal;
+                color: white;
+                letter-spacing: 1px;
+                cursor: pointer;
+        
+            }
+        }
+    }
+    .userfinder{
+        width: 90%;
+        height: 300px;
+    
+    }
+    .userstables{
+        margin-top: 4em;
+        width: 90%;
+        height: 600px;
+        position: relative;
+        .MuiDataGrid-root{
+            width: 100%;
+        }
+    }
+}

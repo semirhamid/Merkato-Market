@@ -1,0 +1,98 @@
+.sidebar {
+    box-shadow: 17px 10px 20px -3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 450px;
+    box-sizing: border-box;
+    padding: 0 1em;
+    transform: translate(-100%);
+    transition: all 0.4s;
+    display: none;
+    margin-right: 1em;
+    height: 90vh;
+    hr {
+        height: 0;
+        border: 0.5px solid rgb(230, 227, 227);
+    }
+
+    .center {
+        padding-left: 10px;
+        .name{
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+            font-size: 18px;
+            color: #7451f8;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .title {
+                font-size: 10px;
+                font-weight: bold;
+                color: #999;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ece8ff;
+                }
+
+                .icon {
+                    font-size: 18px;
+                    color: #7451f8;
+                }
+
+                span {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #888;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #7451f8;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1) {
+                background-color: whitesmoke;
+            }
+
+            &:nth-child(2) {
+                background-color: #333;
+            }
+
+            &:nth-child(3) {
+                background-color: darkblue;
+            }
+        }
+    }
+}
+.sidebar--open{
+    transform: translate(0);
+    display: inline;
+    width: 245px;
+    z-index: 10;
+}
