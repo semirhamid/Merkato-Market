@@ -36,7 +36,7 @@
     "random-number": "^0.0.9",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
-    "react-cookie": "^4.1.1",
+    "react-cookie": "^7.2.2",
     "react-dom": "^18.2.0",
     "react-faq-component": "^1.3.4",
     "react-fullscreen-loading": "^0.0.4",
@@ -48,7 +48,7 @@
     "recharts": "^2.1.14",
     "sass": "^1.55.0",
     "styled-components": "^5.3.6",
-    "universal-cookie": "^4.0.4",
+    "universal-cookie": "^7.2.2",
     "vite-plugin-svgr": "^2.4.0",
     "yup": "^0.32.11",
     "zod": "^3.19.1"
