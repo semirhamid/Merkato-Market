@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" 
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 1  # Ensures only one PR is raised at a time
+    versioning-strategy: increase
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
